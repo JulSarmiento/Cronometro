@@ -1,0 +1,11 @@
+## Proyecto: Cronometro
+
+1. Pagina que contenga: 
+     - Navbar con titulo "Mi proyecto" y un icono
+     - Cronometro
+
+
+2. El cronometro debe tener: 
+    - Restart
+    - Play
+    - Stop
