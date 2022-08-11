@@ -1,0 +1,129 @@
+:root {
+  --dark-violete: #4b3241;
+  --light-violet: #6a4753;
+  --dark-pink: #9b6576;
+  --pink: #de93a6a9;
+  --light-pink: #e8bfd5;
+
+  --roboto: 'Roboto Mono', monospace;
+  --lemon:  'Lemon', cursive;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--roboto);
+}
+
+/* Header Styles */
+.header {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 5px 15px 5px rgba(222,147,166,0.31);
+}
+
+.header h1 {
+  font-family: var(--lemon);
+  color: var(--dark-pink);
+  transition: 1s;
+}
+
+.header h1:hover {
+  color: var(--dark-violete);
+}
+
+.header img{
+  height: 50px;
+}
+
+
+/* Chronomete Styles */
+.chronometer{
+  display: grid;
+  width: 100%;
+  height: 70vh;
+  place-content: center;
+}
+
+.time-container{
+  background-color: var(--pink);
+  width: 370px;
+  height: auto;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 15px 5px rgba(232,191,213,0.59);
+  display: grid;
+  place-content: center;
+}
+
+.time-container .screen{ 
+  color: var(--dark-violete);
+  background-color: rgba(255, 255, 255, 0.507);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.time-container .screen span{ 
+  font-size: 50px;
+}
+
+.btn-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;    
+}
+
+.btn-container button{
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 30px;
+  color: var(--dark-pink);
+  outline: inherit;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-container button:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: var(--light-pink);
+  background-color: var(--pink);
+  border-radius: 10px;
+ 
+}
+
+/* Footer Styles */
+
+.footer { 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 1px -5px 15px 5px rgba(222,147,166,0.31);
+}
+
+.footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.footer ul li a{
+  text-decoration: none;
+  color: var(--dark-pink);
+  font-size: 20px; 
+  transition: 1s;
+}
+
+.footer ul li a:hover{
+  color: var(--dark-violete);
+}
+
