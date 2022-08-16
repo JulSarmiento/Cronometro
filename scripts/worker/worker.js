@@ -4,7 +4,11 @@
 let worker = new Worker('./scripts/worker/timer-worker.js');
 
 /**
+<<<<<<< HEAD
  * This is the web-worker object (they can run scripts in the background without interfering the user's interface)
+=======
+ * This is the web-worker object (they can run scripts in the background without interfering the user's interface), they send messages to the worker funcion.
+>>>>>>> d901c6d (pequeños cambios)
  * 
  * @author Max <https://maxschmitt.me/posts/setinterval-settimeout-slows-down-on-tab-change/>
  */
@@ -12,6 +16,7 @@ const workerTimer = {
   id: 0,
   callbacks: {},
 
+<<<<<<< HEAD
   /**
    * 
    * @param {function} cb 
@@ -19,6 +24,8 @@ const workerTimer = {
    * @param {*} context 
    * @returns 
    */
+=======
+>>>>>>> d901c6d (pequeños cambios)
   setInterval: function(cb, interval, context) {
     this.id++
     let id = this.id
@@ -31,10 +38,13 @@ const workerTimer = {
     return id
   },
 
+<<<<<<< HEAD
   /**
    * 
    * @param {*} e 
    */
+=======
+>>>>>>> d901c6d (pequeños cambios)
   onMessage: function(e) {
     switch (e.data.message) {
       case 'interval:tick':
@@ -47,10 +57,13 @@ const workerTimer = {
     }
   },
 
+<<<<<<< HEAD
   /**
    * 
    * @param {*} id 
    */
+=======
+>>>>>>> d901c6d (pequeños cambios)
   clearInterval: function(id) {
     worker.postMessage({ command: 'interval:clear', id: id })
   }

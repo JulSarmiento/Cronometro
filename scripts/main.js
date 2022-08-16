@@ -73,6 +73,10 @@ class Chronometer {
     Chronometer.write();
     timeStarted = workerTimer.setInterval(Chronometer.write, 10);
     btnStart.removeEventListener("click", Chronometer.start);
+<<<<<<< HEAD
+=======
+    // notifyMe('Cronómetro iniciado')
+>>>>>>> d901c6d (pequeños cambios)
   }
 
   /**
@@ -83,6 +87,10 @@ class Chronometer {
   static stop() {
     workerTimer.clearInterval(timeStarted);
     btnStart.addEventListener("click", Chronometer.start);
+<<<<<<< HEAD
+=======
+    // notifyMe('Cronómetro pausado')
+>>>>>>> d901c6d (pequeños cambios)
   }
 
   /**
@@ -98,6 +106,10 @@ class Chronometer {
     s = 0;
     mls = 0;
     btnStart.addEventListener("click", Chronometer.start);
+<<<<<<< HEAD
+=======
+    // notifyMe('Cronómetro reanudado')
+>>>>>>> d901c6d (pequeños cambios)
   }
 }
 
