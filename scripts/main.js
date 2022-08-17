@@ -3,27 +3,27 @@ const btnStart = document.getElementById("btn-start");
 const btnStop = document.getElementById("btn-stop");
 const btnReset = document.getElementById("btn-reset");
 
-// /**
-//  * This function validates if the navigator allows push notifications, if it does, resives the message and
-//  * sendit if the user acept the notifications. 
-//  * 
-//  * @param {string} message 
-//  */
-//  function notifyMe(message) {
+/**
+ * This function validates if the navigator allows push notifications, if it does, resives the message and
+ * sendit if the user acept the notifications. 
+ * 
+ * @param {string} message 
+ */
+ function notifyMe(message) {
 
-//   if (!("Notification" in window)) {
-//     alert("Este navegador no es compatible con las notificaciones de escritorio");
-//   }
+  if (!("Notification" in window)) {
+    alert("Este navegador no es compatible con las notificaciones de escritorio");
+  }
 
-//   else if (Notification.permission !== "denied") {
-//     Notification.requestPermission().then(function (permission) {
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
 
-//       if (permission === "granted") {
-//         let notification = new Notification(message);
-//       }
-//     });
-//   }
-// }
+      if (permission === "granted") {
+        let notification = new Notification(message);
+      }
+    });
+  }
+}
 
 let h = 0, m = 0, s = 0, mls = 0, timeStarted = 0;
 
@@ -73,10 +73,7 @@ class Chronometer {
     Chronometer.write();
     timeStarted = workerTimer.setInterval(Chronometer.write, 10);
     btnStart.removeEventListener("click", Chronometer.start);
-<<<<<<< HEAD
-=======
-    // notifyMe('Cronómetro iniciado')
->>>>>>> d901c6d (pequeños cambios)
+    notifyMe('Cronómetro iniciado')
   }
 
   /**
@@ -87,10 +84,7 @@ class Chronometer {
   static stop() {
     workerTimer.clearInterval(timeStarted);
     btnStart.addEventListener("click", Chronometer.start);
-<<<<<<< HEAD
-=======
-    // notifyMe('Cronómetro pausado')
->>>>>>> d901c6d (pequeños cambios)
+    notifyMe('Cronómetro pausado')
   }
 
   /**
@@ -106,10 +100,7 @@ class Chronometer {
     s = 0;
     mls = 0;
     btnStart.addEventListener("click", Chronometer.start);
-<<<<<<< HEAD
-=======
-    // notifyMe('Cronómetro reanudado')
->>>>>>> d901c6d (pequeños cambios)
+    notifyMe('Cronómetro reanudado')
   }
 }
 
