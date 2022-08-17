@@ -5,10 +5,14 @@ let worker = new Worker('./scripts/worker/timer-worker.js');
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * This is the web-worker object (they can run scripts in the background without interfering the user's interface)
 =======
  * This is the web-worker object (they can run scripts in the background without interfering the user's interface), they send messages to the worker funcion.
 >>>>>>> d901c6d (pequeños cambios)
+=======
+ * This is the web-worker object (they can run scripts in the background without interfering the user's interface), they send messages to the worker funcion in the worker related file.
+>>>>>>> 6132d15 (pequeños cambios)
  * 
  * @author Max <https://maxschmitt.me/posts/setinterval-settimeout-slows-down-on-tab-change/>
  */
