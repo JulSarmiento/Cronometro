@@ -35,6 +35,12 @@ body {
   color: var(--dark-violete);
 }
 
+.header .clock {
+  font-family: var(--lemon);
+  letter-spacing: 1px;
+  color: var(--dark-pink);
+}
+
 .header img{
   height: 50px;
 }

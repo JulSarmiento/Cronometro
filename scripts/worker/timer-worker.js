@@ -1,14 +1,10 @@
 let intervalIds = {}
 
 /**
-<<<<<<< HEAD
  * 
  * @param {*} e 
-=======
  * This function set the messages cases to be send to the worker object, to allows the web been noticed that setInterval() will keep working.
  * 
- * @param {Event} e 
->>>>>>> d901c6d (pequeños cambios)
  */
 self.onmessage = function(e) {
   switch (e.data.command) {
